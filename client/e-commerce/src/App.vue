@@ -33,14 +33,14 @@ export default {
   components: { navbar },
   data() {
     return {
-      logStatus: true,
+      logStatus: false,
       products: [],
       cart: [],
       token:
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjYmEwMmRlMDA4OGI0MDFiM2YzMWVjYSIsInVzZXJuYW1lIjoiY29iYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE1NTU4MDU4MjJ9.pqUafQCjdX3M2mIOEWW3T5EAlwEKgJOwXuA_U7OLs5A",
-      role: "user",
-      cartId: "5cbb88ed47258a02e2630a41",
-      userId: "5cbb88b047258a02e2630a40"
+        "",
+      role: "",
+      cartId: "",
+      userId: ""
     };
   },
   methods: {
@@ -77,6 +77,7 @@ export default {
           console.log(err)
         })
       }
+
     },
     logedOut() {
       this.logStatus = false;
